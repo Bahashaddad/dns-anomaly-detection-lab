@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="3"><title>DNS Anomaly Detection Lab</title><link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}"></head>
+<body><main><h1>DNS Anomaly Detection Lab</h1><p>Observations and heuristic scores—not confirmed tunnels. No operating-system blocking.</p>
+<section class="metrics"><article><strong>{{ summary.total }}</strong>Retained events</article><article><strong>{{ summary.low }}</strong>Low score</article><article><strong>{{ summary.suspicious }}</strong>Suspicious</article><article><strong>{{ summary.high }}</strong>High risk</article></section>
+<p>Refreshes every 3 seconds. Shows the newest 200 events; summary covers retained database events.</p>
+<div class="table-wrap"><table><thead><tr><th>UTC time</th><th>Source</th><th>Query</th><th>Type</th><th>Score</th><th>Verdict</th><th>Context / action</th></tr></thead><tbody>
+{% for event in events %}<tr><td>{{ event.timestamp }}</td><td>{{ event.source_ip }}</td><td class="domain">{{ event.domain }}</td><td>{{ event.qtype }}</td><td>{{ event.score }}</td><td>{{ event.verdict }}</td><td>{% if event.popular %}Listed suffix; {% endif %}{{ event.action }}</td></tr>{% else %}<tr><td colspan="7">No events yet. Run the offline demo first.</td></tr>{% endfor %}
+</tbody></table></div><p>Use only authorized capture data. DNS observations can reveal private browsing and network details.</p></main></body></html>

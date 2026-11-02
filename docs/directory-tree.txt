@@ -1,0 +1,43 @@
+dns-anomaly-detection-lab/
+├── .github/
+│   └── workflows/
+│       └── checks.yml
+├── docs/
+│   ├── architecture.md
+│   ├── dependency-audit.json
+│   ├── directory-tree.txt
+│   ├── evaluation.md
+│   ├── file-classification.csv
+│   ├── portfolio-review.md
+│   └── verification.md
+├── examples/
+│   ├── popular-domains.txt
+│   └── synthetic-queries.json
+├── static/
+│   └── dashboard.css
+├── templates/
+│   └── dashboard.html
+├── tests/
+│   ├── test_demo.py
+│   ├── test_detection.py
+│   ├── test_mitigation.py
+│   ├── test_packets.py
+│   └── test_storage_dashboard.py
+├── tools/
+│   └── check_publication.py
+├── .gitignore
+├── CHANGELOG.md
+├── LICENSE
+├── NOTICE.md
+├── README.md
+├── SECURITY.md
+├── capture.py
+├── config.py
+├── dashboard.py
+├── detect.py
+├── mitigation.py
+├── pyproject.toml
+├── requirements-dev.txt
+├── requirements.txt
+├── rules.py
+└── storage.py

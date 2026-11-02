@@ -1,0 +1,2 @@
+# Synthetic suffix context for offline demonstrations only.
+example.test

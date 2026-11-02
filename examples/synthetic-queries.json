@@ -1,0 +1,27 @@
+[
+  {
+    "domain": "www.example.test",
+    "source_ip": "192.0.2.10",
+    "qtype": "A"
+  },
+  {
+    "domain": "mail.example.test",
+    "source_ip": "2001:db8::10",
+    "qtype": "AAAA"
+  },
+  {
+    "domain": "abcdefghijklmnopqrstuvwxyz012345.api.lab.example.test",
+    "source_ip": "192.0.2.10",
+    "qtype": "A"
+  },
+  {
+    "domain": "abcdefghijklmnopqrstuvwxyz012345.api.lab.example.test",
+    "source_ip": "192.0.2.10",
+    "qtype": "TXT"
+  },
+  {
+    "domain": "abcdefghijklmnop.example.test",
+    "source_ip": "2001:db8::10",
+    "qtype": "TXT"
+  }
+]

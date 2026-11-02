@@ -1,0 +1,17 @@
+﻿original_entry,bytes,classification,reason,prepared_destination
+network/.gitignore,169,MODIFY,Reviewed project-owned source replaced in prepared edition,.gitignore
+network/alerts.json,4,REMOVE,Empty original runtime store; new local SQLite store generated at runtime,runtime/ (ignored)
+network/capture.py,2024,MODIFY,Reviewed project-owned source replaced in prepared edition,capture.py
+network/config.py,646,MODIFY,Reviewed project-owned source replaced in prepared edition,config.py
+network/dashboard.py,4722,MODIFY,Reviewed project-owned source replaced in prepared edition,dashboard.py
+network/detect.py,724,MODIFY,Reviewed project-owned source replaced in prepared edition,detect.py
+network/prevent.py,983,MODIFY,Popularity matching separated from sandbox-only preview; no OS hosts-file writes,detect.py; mitigation.py
+network/rules.py,516,MODIFY,Reviewed project-owned source replaced in prepared edition,rules.py
+network/templates/.tranco/3Q2VL.csv,22728160,REMOVE,Large automatic ranking cache; no third-party dataset redistributed,examples/popular-domains.txt is a new synthetic alternative
+network/templates/.tranco/metadata.json,24,REMOVE,Large automatic ranking cache; no third-party dataset redistributed,examples/popular-domains.txt is a new synthetic alternative
+network/templates/.tranco/VQWQN.csv,22740154,REMOVE,Large automatic ranking cache; no third-party dataset redistributed,examples/popular-domains.txt is a new synthetic alternative
+network/test.py,1863,MODIFY,Live random shell-driven queries replaced by deterministic offline fixtures/assertions,tests/ and examples/
+DNS TUNNELING IPS.pdf,368630,PRIVATE — DO NOT PUBLISH,Student identifiers and unsupported result claims; report not redistributed,docs/evaluation.md and new README
+network/venv/ (all 9191 files),228407013,REMOVE,Complete filename inventory delivered separately. Environment/native files were not individually security-audited. Original Git metadata is not transferred.,Excluded
+network/.git/ (all 31 files),29137,PRIVATE — DO NOT PUBLISH,Complete filename inventory delivered separately. Environment/native files were not individually security-audited. Original Git metadata is not transferred.,Excluded
+network/__pycache__/ (all 4 files),5188,REMOVE,Complete filename inventory delivered separately. Environment/native files were not individually security-audited. Original Git metadata is not transferred.,Excluded
